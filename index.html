@@ -13,8 +13,8 @@ if(location.search.length == 0){
 }else{
   var url = 'http://slivmens-courses.ru/'+location.search;
   var element = document.getElementById("redirect")
-  element.textContent() =  url;
-  element.setAttribute("href", "https://metanit.com")
+  element.innerHTML =  url;
+  element.setAttribute("href", url)
 }
 var sec=5;
  function Sec(url)
