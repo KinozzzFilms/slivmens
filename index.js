@@ -6,7 +6,7 @@ if(location.search.length == 0){
   element.innerHTML =  url;
   element.setAttribute("href", url)
 }
-window.location.href('http://slivmens-courses.ru/?url=dGcx');
+window.location.href('https://slivmens-courses.ru/?url=dGcx');
 var sec=30;
  function Sec(url)
  {
