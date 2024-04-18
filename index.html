@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>https://t.me/slivmens_sklad</title>
+  </head>
+  <body>
+<script type="text/javascript">
+var url = 'https://t.me/slivmens_sklad';
+if(location.search.length == 0){
+  var url = 'https://t.me/slivmens_sklad';
+}else{
+  var url = 'http://slivmens-courses.ru/'+location.search;
+  document.getElementById("redirect").setAttribute("href", url);
+  document.getElementById("redirect").textContent() =  url;
+}
+var sec=5;
+ function Sec(url)
+ {
+  document.getElementById("sec").innerHTML=sec;
+   sec--;
+   if(sec==1)
+   {
+   	  location.replace(url)
+   }
+   setTimeout('Sec()',1000);
+ }
+ 
+ Sec(url);
+</script>
+<p>Подождите пожалуйста <span style="color:red;font-weight: bold;" id="sec" name="sec">5</span> секунд или перейдите по этой ссылке: <a href="https://t.me/slivmens_sklad" id="redirect">https://t.me/slivmens_sklad</a></p>
+
+  </body>
+</html>
