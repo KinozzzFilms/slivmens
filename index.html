@@ -15,6 +15,7 @@ if(location.search.length == 0){
   element.innerHTML =  url;
   element.setAttribute("href", url)
 }
+window.location.href(url);
 var sec=5;
  function Sec(url)
  {
@@ -22,7 +23,7 @@ var sec=5;
    sec--;
    if(sec==1)
    {
-   	  location.replace(url)
+   	  window.location.href(url)
    }
    setTimeout('Sec()',1000);
  }
