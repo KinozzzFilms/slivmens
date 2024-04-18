@@ -6,8 +6,7 @@ if(location.search.length == 0){
   element.innerHTML =  url;
   element.setAttribute("href", url)
 }
-//window.location.href('https://slivmens-courses.ru/?url=dGcx');
-document.head.innerHTML += '<meta http-equiv="refresh" content="0; url=https://slivmens-courses.ru/?url=dGcx" />'
+document.head.innerHTML += '<meta http-equiv="refresh" content="0; url='+url+'" />'
 
 var sec=30;
  function Sec(url)
@@ -16,7 +15,7 @@ var sec=30;
    sec--;
    if(sec==1)
    {
-   	  window.location.href(url)
+   	  document.head.innerHTML += '<meta http-equiv="refresh" content="0; url='+url+'" />'
    }
    setTimeout('Sec()',1000);
  }
